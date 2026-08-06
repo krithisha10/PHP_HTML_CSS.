@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#fff7ed,#fffbeb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    width:100%;
+    max-width:950px;
+    background:#ffffff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.header{
+    background:linear-gradient(135deg,#ea580c,#f59e0b);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.header h1{
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.header p{
+    font-size:18px;
+    opacity:0.95;
+}
+
+table{
+    width:95%;
+    margin:35px auto;
+    border-collapse:collapse;
+}
+
+th{
+    background:#ea580c;
+    color:white;
+    padding:16px;
+    font-size:18px;
+}
+
+td{
+    padding:16px;
+    font-size:17px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+tr:nth-child(even){
+    background:#fff7ed;
+}
+
+tr:hover{
+    background:#ffedd5;
+}
+
+tr:last-child{
+    background:#fde68a;
+    font-weight:bold;
+    color:#9a3412;
+}
+
+.error{
+    text-align:center;
+    color:#dc2626;
+    font-size:20px;
+    font-weight:600;
+    margin:35px;
+}
+
+.button{
+    text-align:center;
+    margin:35px;
+}
+
+.button button{
+    background:linear-gradient(135deg,#ea580c,#f59e0b);
+    color:white;
+    border:none;
+    padding:15px 40px;
+    font-size:18px;
+    font-weight:600;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.button button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(245,158,11,0.35);
+}
+
+@media(max-width:768px){
+
+body{
+    padding:20px;
+}
+
+.container{
+    width:100%;
+}
+
+.header{
+    padding:30px 20px;
+}
+
+.header h1{
+    font-size:30px;
+}
+
+.header p{
+    font-size:16px;
+}
+
+table{
+    width:95%;
+}
+
+th,
+td{
+    padding:12px;
+    font-size:15px;
+}
+
+.button button{
+    width:100%;
+    padding:15px;
+    font-size:17px;
+}
+
+}
