@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parent–Teacher Meeting Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>📚 Parent–Teacher Meeting</h1>
+
+<p>Appointment Registration Portal</p>
+
+</div>
+
+<form action="register.php" method="POST">
+
+<label>👨‍👩‍👧 Parent Name</label>
+<input type="text" name="parent" placeholder="Enter Parent Name" required>
+
+<label>👦 Student Name</label>
+<input type="text" name="student" placeholder="Enter Student Name" required>
+
+<label>🎓 Class</label>
+<select name="class" required>
+<option value="">-- Select Class --</option>
+<option>I</option>
+<option>II</option>
+<option>III</option>
+<option>IV</option>
+<option>V</option>
+<option>VI</option>
+<option>VII</option>
+<option>VIII</option>
+<option>IX</option>
+<option>X</option>
+<option>XI</option>
+<option>XII</option>
+</select>
+
+<label>👩‍🏫 Teacher</label>
+<select name="teacher" required>
+<option value="">-- Select Teacher --</option>
+<option>Mrs. Priya</option>
+<option>Mr. Arjun</option>
+<option>Mrs. Meena</option>
+<option>Mr. Rahul</option>
+<option>Mrs. Kavitha</option>
+</select>
+
+<label>📅 Meeting Date</label>
+<input type="date" name="date" required>
+
+<label>⏰ Meeting Slot</label>
+<select name="slot" required>
+<option value="">-- Select Time Slot --</option>
+<option>09:00 AM - 09:30 AM</option>
+<option>09:30 AM - 10:00 AM</option>
+<option>10:00 AM - 10:30 AM</option>
+<option>10:30 AM - 11:00 AM</option>
+<option>11:00 AM - 11:30 AM</option>
+<option>11:30 AM - 12:00 PM</option>
+</select>
+
+<input type="submit" value="Book Appointment">
+
+</form>
+
+</div>
+
+</body>
+</html>
