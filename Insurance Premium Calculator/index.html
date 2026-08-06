@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insurance Premium Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>🛡️ Insurance Premium Calculator</h1>
+
+<p>Secure Your Future with the Right Coverage</p>
+
+</div>
+
+<form action="premium.php" method="POST">
+
+<label>👤 Applicant Name</label>
+<input type="text" name="name" placeholder="Enter Applicant Name" required>
+
+<label>🎂 Age</label>
+<input type="number" name="age" min="18" max="100" placeholder="Enter Your Age" required>
+
+<label>📅 Policy Term (Years)</label>
+<select name="term" required>
+<option value="">-- Select Policy Term --</option>
+<option value="10">10 Years</option>
+<option value="15">15 Years</option>
+<option value="20">20 Years</option>
+<option value="25">25 Years</option>
+<option value="30">30 Years</option>
+</select>
+
+<label>💰 Coverage Amount (₹)</label>
+<input type="number" name="coverage" placeholder="Enter Coverage Amount" required>
+
+<input type="submit" value="Calculate Premium">
+
+</form>
+
+</div>
+
+</body>
+</html>
