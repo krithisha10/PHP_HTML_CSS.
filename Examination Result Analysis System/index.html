@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examination Result Analysis</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>🎓 Examination Result Analysis</h1>
+
+<p>University Examination Result Processing System</p>
+
+</div>
+
+<form action="result.php" method="POST">
+
+<label>👩‍🎓 Student Name</label>
+<input type="text" name="name" placeholder="Enter Student Name" required>
+
+<label>🆔 Register Number</label>
+<input type="text" name="regno" placeholder="Enter Register Number" required>
+
+<label>📘 Subject 1 Marks</label>
+<input type="number" name="m1" min="0" max="100" required>
+
+<label>📙 Subject 2 Marks</label>
+<input type="number" name="m2" min="0" max="100" required>
+
+<label>📗 Subject 3 Marks</label>
+<input type="number" name="m3" min="0" max="100" required>
+
+<label>📕 Subject 4 Marks</label>
+<input type="number" name="m4" min="0" max="100" required>
+
+<label>📓 Subject 5 Marks</label>
+<input type="number" name="m5" min="0" max="100" required>
+
+<input type="submit" value="Analyze Result">
+
+</form>
+
+</div>
+
+</body>
+</html>
