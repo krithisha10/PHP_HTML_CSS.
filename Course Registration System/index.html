@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Course Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Course Registration System</h2>
+
+    <form action="registration.php" method="POST">
+
+        <label>Student Name</label>
+        <input type="text" name="studentName" required>
+
+        <label>Register Number</label>
+        <input type="text" name="registerNumber" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" pattern="[0-9]{10}" required>
+
+        <label>Department</label>
+        <select name="department" required>
+            <option value="">Select Department</option>
+            <option>B.Sc Computer Science</option>
+            <option>BCA</option>
+            <option>B.Com</option>
+            <option>BBA</option>
+            <option>B.Sc Mathematics</option>
+        </select>
+
+        <label>Course</label>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option>Web Development</option>
+            <option>Python Programming</option>
+            <option>Java Programming</option>
+            <option>Data Analytics</option>
+            <option>Database Management System</option>
+        </select>
+
+        <label>Semester</label>
+        <select name="semester" required>
+            <option value="">Select Semester</option>
+            <option>Semester I</option>
+            <option>Semester II</option>
+            <option>Semester III</option>
+            <option>Semester IV</option>
+            <option>Semester V</option>
+            <option>Semester VI</option>
+        </select>
+
+        <input type="submit" value="Register Course">
+
+    </form>
+
+</div>
+
+</body>
+</html>
