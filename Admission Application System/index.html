@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Admission Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Admission Application Form</h2>
+
+    <form action="acknowledgement.php" method="post">
+
+        <label>Applicant Name</label>
+        <input type="text" name="applicantName" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender</label>
+
+        <div class="gender">
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+
+        <label>Email Address</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" pattern="[0-9]{10}" required>
+
+        <label>Course Applied</label>
+
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option>B.Sc Computer Science</option>
+            <option>BCA</option>
+            <option>B.Com</option>
+            <option>BBA</option>
+            <option>B.Sc Mathematics</option>
+        </select>
+
+        <label>Address</label>
+        <textarea name="address" rows="4" required></textarea>
+
+        <input type="submit" value="Submit Application">
+
+    </form>
+
+</div>
+
+</body>
+</html>
