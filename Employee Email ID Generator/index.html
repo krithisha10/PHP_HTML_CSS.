@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Employee Email ID Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Employee Email ID Generator</h2>
+
+    <form action="email.php" method="POST">
+
+        <label>Employee First Name</label>
+        <input type="text" name="firstName" required>
+
+        <label>Employee Last Name</label>
+        <input type="text" name="lastName" required>
+
+        <label>Employee ID</label>
+        <input type="text" name="employeeId" required>
+
+        <label>Department</label>
+
+        <select name="department" required>
+
+            <option value="">Select Department</option>
+            <option>Computer Science</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+            <option>Sales</option>
+            <option>Information Technology</option>
+
+        </select>
+
+        <input type="submit" value="Generate Email ID">
+
+    </form>
+
+</div>
+
+</body>
+</html>
