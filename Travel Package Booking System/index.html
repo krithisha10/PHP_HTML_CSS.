@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Package Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+<h1>✈️ Travel Package Booking</h1>
+<p class="subtitle">
+Explore beautiful destinations and book your dream vacation
+</p>
+
+<form action="book.php" method="post">
+<h2>Select Your Package</h2>
+<div class="packages">
+<label class="card">
+
+<input type="radio" name="package" value="Maldives Paradise" required>
+<h3>🏝️ Maldives Paradise</h3>
+<p>5 Days / 4 Nights</p>
+<p>₹45,000</p>
+</label>
+<label class="card">
+
+<input type="radio" name="package" value="Manali Adventure">
+<h3>🏔️ Manali Adventure</h3>
+<p>6 Days / 5 Nights</p>
+<p>₹25,000</p>
+</label>
+<label class="card">
+
+<input type="radio" name="package" value="Dubai Luxury Tour">
+<h3>🌆 Dubai Luxury Tour</h3>
+<p>7 Days / 6 Nights</p>
+<p>₹70,000</p>
+</label>
+</div>
+<h2>Customer Details</h2>
+
+<input type="text" 
+name="name"
+placeholder="Full Name"
+required>
+
+<input type="email"
+name="email"
+placeholder="Email Address"
+required>
+
+<input type="tel"
+name="phone"
+placeholder="Phone Number"
+required>
+
+<input type="number"
+name="persons"
+placeholder="Number of Persons"
+required>
+
+<input type="date"
+name="date"
+required>
+
+<button type="submit">
+Book Now ✈️</button>
+</form>
+</div>
+</body>
+</html>
