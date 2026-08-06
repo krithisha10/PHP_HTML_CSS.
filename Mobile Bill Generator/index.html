@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Bill Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📱 Mobile Bill Generator</h1>
+    <p>Enter Customer Usage Details</p>
+
+    <form action="bill.php" method="post">
+
+        <label>Customer Name</label>
+        <input type="text" name="name" required>
+
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" required>
+
+        <label>Data Usage (GB)</label>
+        <input type="number" name="data" required>
+
+        <label>Call Minutes</label>
+        <input type="number" name="calls" required>
+
+        <label>SMS Count</label>
+        <input type="number" name="sms" required>
+
+        <label>Select Tariff Plan</label>
+
+        <select name="plan">
+            <option value="Basic">Basic Plan</option>
+            <option value="Premium">Premium Plan</option>
+        </select>
+
+        <button type="submit">Generate Bill</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
