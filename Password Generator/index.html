@@ -1,0 +1,99 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="security-icon">
+        🔐
+    </div>
+
+
+    <h1>Secure Password<br>Generator</h1>
+
+    <p class="subtitle">
+        Create a powerful password to protect your digital identity
+    </p>
+
+
+    <form action="generate.php" method="post">
+
+
+        <label>Password Length</label>
+
+        <div class="length-box">
+            <input type="number" 
+                   name="length"
+                   min="8"
+                   max="30"
+                   value="12"
+                   required>
+        </div>
+
+
+        <div class="strength-box">
+
+            <h3>Password Strength</h3>
+
+            <div class="strength-bar">
+                <div class="strength-fill"></div>
+            </div>
+
+            <span>Strong Security</span>
+
+        </div>
+
+
+
+        <div class="features">
+
+            <h3>Password Includes</h3>
+
+
+            <div class="feature">
+                <span>✓</span>
+                Uppercase Letters (A-Z)
+            </div>
+
+
+            <div class="feature">
+                <span>✓</span>
+                Lowercase Letters (a-z)
+            </div>
+
+
+            <div class="feature">
+                <span>✓</span>
+                Numbers (0-9)
+            </div>
+
+
+            <div class="feature">
+                <span>✓</span>
+                Special Characters (@#$%)
+            </div>
+
+
+        </div>
+
+
+
+        <button type="submit">
+            🔐 Generate Password
+        </button>
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+</html>
