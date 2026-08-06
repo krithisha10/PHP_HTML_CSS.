@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance Processing System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>🎓 Attendance Processing System</h1>
+
+<p>Check Attendance Percentage & Exam Eligibility</p>
+
+</div>
+
+<form action="attendance.php" method="POST">
+
+<label>👨‍🎓 Student Name</label>
+<input type="text" name="name" placeholder="Enter Student Name" required>
+
+<label>🆔 Register Number</label>
+<input type="text" name="regno" placeholder="Enter Register Number" required>
+
+<label>📚 Total Working Days</label>
+<input type="number" name="totaldays" min="1" placeholder="Enter Total Working Days" required>
+
+<label>✅ Days Present</label>
+<input type="number" name="presentdays" min="0" placeholder="Enter Days Present" required>
+
+<input type="submit" value="Process Attendance">
+
+</form>
+
+</div>
+
+</body>
+</html>
