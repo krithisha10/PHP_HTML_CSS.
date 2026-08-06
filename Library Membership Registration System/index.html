@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>
+        <i class="fa-solid fa-book-open-reader"></i>
+        Library Membership Registration
+    </h1>
+
+    <p class="subtitle">
+        Join our library and enjoy unlimited access to books and digital resources.
+    </p>
+
+    <form action="register.php" method="POST">
+
+        <h2>Member Details</h2>
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required>
+
+        <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            required>
+
+        <textarea
+            name="address"
+            rows="3"
+            placeholder="Residential Address"
+            required></textarea>
+
+        <input
+            type="number"
+            name="age"
+            placeholder="Age"
+            min="5"
+            max="100"
+            required>
+
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <select name="membership" required>
+            <option value="">Membership Type</option>
+            <option>Student</option>
+            <option>Faculty</option>
+            <option>Public Member</option>
+        </select>
+
+        <button type="submit">
+            <i class="fa-solid fa-id-card"></i>
+            Register Membership
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
